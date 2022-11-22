@@ -91,10 +91,18 @@ public class Main {
                     System.out.println("enter the count");
                     int q=sc.nextInt();
 
-                    int ss=c.getTea();
-                    int total=q*ss;
+                    int tc=c.getTea();
+                    int total=q*tc;
                     //System.out.println(ss);
                     System.out.println(total);
+                    break;
+                case 2:
+                    System.out.println("enter the count");
+                    int q2= sc.nextInt();
+                    int cc=c.getCoffee();
+                    int totalcoffee=q2*cc;
+                    System.out.println(totalcoffee);
+                    break;
 
             }
 
