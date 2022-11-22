@@ -110,7 +110,14 @@ public class Main {
                     int sc1=c.getSnacks();
                     int totalsnack=q3*sc1;
                     System.out.println(totalsnack);
-
+                    break;
+                case 4:
+                    System.out.println("enter the count");
+                    int q4=sc.nextInt();
+                    int ic=c.getIdali();
+                    int totalidali=q4*ic;
+                    System.out.println(totalidali);
+                    break;
             }
 
         }
