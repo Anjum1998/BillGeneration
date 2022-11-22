@@ -21,36 +21,33 @@ class customer
         this.name = name;
         PhoneNo = phoneNo;
     }
-   public int  Tea(int count)
+   public void  Tea(int count)
     {
-        this.tea=this.tea*count;
-       // return this.tea;
-        int t=this.tea;
-        return t;
+
+        this.tea = this.tea * count;
+        System.out.println("total"+this.tea);
+
     }
-    int Coffee(int count)
+    public void Coffee(int count)
     {
         this.coffee=this.coffee*count;
-       // return this.coffee;
-        int c1=this.coffee;
-        return c1;
+        System.out.println("total"+this.coffee);
+
     }
-    int snacks(int count)
+    public void snacks(int count)
     {
         this.snacks=this.snacks*count;
-        return this.snacks;
+        System.out.println("total"+this.snacks);
     }
-    int idali(int count)
+    public void idali(int count)
     {
         this.idali=this.idali*count;
-        int a=this.idali;
-        return a;
-        //return this.idali;
+        System.out.println("total"+this.idali);
     }
-    int dosa(int count)
+    public void dosa(int count)
     {
         this.dosa=this.dosa*count;
-        return this.dosa;
+        System.out.println("total"+this.dosa);
     }
 
     public int getTea() {
@@ -90,12 +87,13 @@ public class Main {
                     System.out.println("Enter the quantities");
                     System.out.println("enter the count");
                     int q=sc.nextInt();
-
-                    int tc=c.getTea();
-                    int total=q*tc;
-                    //System.out.println(ss);
-                    System.out.println(total);
+                    System.out.println("enter name");
+                    String name=sc.next();
+                    System.out.println("enter phone number");
+                    long number=sc.nextLong();
+                     c.Tea(q);
                     break;
+
                 case 2:
                     System.out.println("enter the count");
                     int q2= sc.nextInt();
@@ -126,7 +124,9 @@ public class Main {
                     int totaldosa=q5*dc;
                     System.out.println(totaldosa);
                     break;
-
+                case 6:
+                    System.out.println("Total amount");
+                    int overall=1;
             }
 
         }
