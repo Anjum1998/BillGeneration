@@ -118,6 +118,15 @@ public class Main {
                     int totalidali=q4*ic;
                     System.out.println(totalidali);
                     break;
+
+                case 5:
+                    System.out.println("enter the count");
+                    int q5=sc.nextInt();
+                    int dc=c.getDosa();
+                    int totaldosa=q5*dc;
+                    System.out.println(totaldosa);
+                    break;
+
             }
 
         }
