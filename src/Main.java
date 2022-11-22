@@ -104,6 +104,13 @@ public class Main {
                     System.out.println(totalcoffee);
                     break;
 
+                case 3:
+                    System.out.println("enter the count");
+                    int q3= sc.nextInt();
+                    int sc1=c.getSnacks();
+                    int totalsnack=q3*sc1;
+                    System.out.println(totalsnack);
+
             }
 
         }
