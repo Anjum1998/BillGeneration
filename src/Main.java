@@ -10,6 +10,7 @@ class customer
     int dosa=6;
     String name;
     long PhoneNo;
+    int total;
 
     public customer()
     {
@@ -20,15 +21,19 @@ class customer
         this.name = name;
         PhoneNo = phoneNo;
     }
-    int  Tea(int count)
+   public int  Tea(int count)
     {
         this.tea=this.tea*count;
-        return this.tea;
+       // return this.tea;
+        int t=this.tea;
+        return t;
     }
     int Coffee(int count)
     {
         this.coffee=this.coffee*count;
-        return this.coffee;
+       // return this.coffee;
+        int c1=this.coffee;
+        return c1;
     }
     int snacks(int count)
     {
@@ -38,7 +43,9 @@ class customer
     int idali(int count)
     {
         this.idali=this.idali*count;
-        return this.idali;
+        int a=this.idali;
+        return a;
+        //return this.idali;
     }
     int dosa(int count)
     {
@@ -46,6 +53,26 @@ class customer
         return this.dosa;
     }
 
+    public int getTea() {
+        return tea;
+
+    }
+
+    public int getCoffee() {
+        return coffee;
+    }
+
+    public int getSnacks() {
+        return snacks;
+    }
+
+    public int getIdali() {
+        return idali;
+    }
+
+    public int getDosa() {
+        return dosa;
+    }
 }
 public class Main {
     public static void main(String[] args) {
@@ -55,9 +82,19 @@ public class Main {
         {
             System.out.println("Select an option \n 1.Tea  \n 2.Coffee \n 3.Snacks \n 4.Idali \n 5.Dosa \n 6.Generate Bill 7.view Transaction \n 8.Exit");
             Scanner sc=new Scanner(System.in);
+            customer c=new customer();
             int n = sc.nextInt();
             switch (n)
             {
+                case 1:
+                    System.out.println("Enter the quantities");
+                    System.out.println("enter the count");
+                    int q=sc.nextInt();
+
+                    int ss=c.getTea();
+                    int total=q*ss;
+                    //System.out.println(ss);
+                    System.out.println(total);
 
             }
 
